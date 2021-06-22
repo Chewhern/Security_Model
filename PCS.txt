@@ -1,0 +1,409 @@
+Post Compromise Security (As simple as possible)
+
+============================================================
+Pre-Compromise Security
+
+When we talk about cyber or information security,
+the first thoroughly used and researched
+approach was pre-compromise security. Pre-Compromise
+Security refers to that there's a team of experts
+guarding the server or network to prevent malicious
+people or actors from going into the server/network
+to cause damage(data breach) to the server/network
+. However, regardless of how secure it
+might be there is always a chance that an insider
+can appear and cause damage(data
+breach/data leak), NDA[Non Disclosure Agreement] 
+and data protection law is not going be effective
+against insider that wants to cause damage.
+Don't get the wrong idea but pre-compromise
+security have its own pros like immediate
+reaction when data breach or data leaks happens
+or in the events of getting hit by ransomware 
+, the immediate reaction certainly help a lot,
+the cons of pre-compromise security is that
+there's no effective ways to stop or to 
+prevent insider from causing troubles
+regardless if punishable law(data protection
+law) is in place.
+============================================================
+
+============================================================
+Why corporate/businesses/company gets hit by
+viruses/ransomware or involve in data breach/leaks
+incident
+
+The main reason why server/network gets hit
+by viruses or ransomwares or insider is
+the server/network has valuable assets to
+them. In most cases, the security experts
+that work for any companies,businesses or
+corporates will keep the valuable assets
+as this is in corporate interests even
+though this will make the corporate/
+company/businesses an extremely obvious
+target to house ransomware/viruses or 
+data leaks/data breaches.
+============================================================
+
+============================================================
+Post-Compromise Security
+
+Post-Compromise Security refers to a security
+model that sources from privacy and "criminal",
+this is a special and specific security model
+that directly thinks data leak/breach is unstoppable,
+and try to maximize damage reduction received by
+user/client with an assumption that law or NDA no longer
+has the effects of restraining criminals or insiders.
+
+==============================
+1st step prevent or make
+social engineering difficult
+==============================
+Traditionally, hackers intend to cause damage by
+hacking into server/network. If the hackers are not strong
+enough, they might just stop there, unable to cause any
+damage. However, this particular scenario is very likely
+not gonna happen in real life as hackers can pretty much
+ignore the network/server guard. This is how hackers 
+traditionally cause damage by hacking into server/network.
+However, this is not the most effective way to do it if
+costs and time was take into consideration,
+hackers/malicious people will try another approach instead,
+called social engineering, this is an approach that tricks
+user/client into giving their credentials to hackers/
+malicious people. The most famous form of social
+engineering is phishing, ever receive emails or messages
+that seems either too scary to be true or too good
+to be true? Maybe majority won't affected by such 
+emails or messages but there are still people who falls
+victim to such approach. The key to perform social
+engineering is that email address/phone number must
+be exposed or known to malicious people/hackers
+otherwise how can they target the user/client?
+
+Remember social engineering is easier to do 
+if they exists in any data leakage or breach that
+contains specific target's user email/phone number, by
+removing or not collecting email or phone numbers,
+if they don't have the specific target's user email/
+phone number, it's harder for them to perform
+social engineering towards user.
+
+The cons of this is that MFA(Multi Factor Authentication)
+or account recovery is no longer possible.
+
+===========================
+2nd step prevent the use
+of password in encryption
+or login
+===========================
+There are a lot of technical details in choosing
+passwords, I will name a few but this only applies
+to user/client side. In general a good password
+must have the following properties, is it long
+enough, is it not consists of top common english
+characters or letters, has other people used the
+same passwords before that has been published to public
+or internet in an unauthorized way, has the passwords
+not been reused? If these conditions were met, then the
+passwords can consider as a good passwords but not many
+user/client will follow these basic golden rules.
+Passphrase can be used to replace the passwords
+as it has more usability and user friendliness.
+
+As QC[Quantum Computer] slowly becomes a common thing
+and people have access to more computational power,
+some experts say that there's a need to introduce
+unicode or non-english characters as a password
+choice. Regardless if unicode or non-english characters
+were used as a password, the golden rules still apply.
+
+If the password is not good, then it should not be used
+in encryption/login at all costs, as pretty much it
+can be "guessed" easily which thus leading to a scenario
+that the encryption that sourced from password are
+weak. In other cases, weak password can also cause a
+problem as it can be "guessed" easily which thus leading
+to a scenario that the login mechanism may have lose
+its purposes.
+
+There is one friendly common alternatives to password
+login mechanism like the 2 factor authentication
+that we received a code from either email/phone
+SMS messages. The another login mechanism that can
+replace password requires the use and understanding of
+public key cryptography typically refers to cryptographic
+digital signature. It works by first requesting digital
+signature public key from user that generated randomly,
+the user will then ask the server to give a random data or
+challenge with a valid duration, the user will then signs
+the random data or challenge with their own private key,
+and sends back the signed random data or challenge to
+the server for digital signature verification purposes.
+If server successfully verified the signed data, then
+the login mechanism works. The 2nd login approach
+is generally better than password based login mechanism
+and has a higher login chance compared to passwords,
+but the problem is user are gonna complain with strong
+sense of unfamiliarity and such new approach can only
+apply to API based application and there's no effective
+ways to have account recovery function.
+
+To some people the 2nd login mechanism might be a disaster,
+as the usability is not that high let alone in most cases,
+majority want account recovery function. Maybe this is 
+not put into research as people are fine with old style
+password based login mechanism.
+
+The alternatives to password if it's used in encryption
+was to use a random key that requires user to store or
+in some cases passphrase can be used. But in general, this
+approach introduces a lot of ease of use issues which user
+probably wouldn't like.
+
+===========================
+3rd step never allows the
+possibility that server
+able to decrypt any
+potential sensitive/
+crucial client data
+===========================
+
+Let's assume that data is valuable like a jewellery, the
+company/corporate/businesses is like the jewellery handling
+and storing store. In a normal common scenario, the store
+will be responsible for providing the safety safe(encryption)
+and at the same time also watching the user/client in
+choosing the key that can be used to lock the safety safe
+(choosing and storing the encryption key on user behalf)
+and stores the key on user behalf. So user is good to go
+without having to worry how they store the key safe and
+secure. Problem solved? In most cases, it's a yes, but
+this provides no security if the keys that store on 
+store(shop/server) gets robbed(leaked/breached). 
+
+In an ideal scenario, the store still provides the safety
+safe(encryption) but instead of them watching the user/
+client to choose the key that can be used to lock the
+safety safe(choosing and storing the encryption key 
+on user behalf), the store must not watch the client/
+user to choose the key that can be used to lock the
+safety safe. Though in general asking the user to
+choose their own keys is a bad idea as they might
+lose it, but in the events that the store that gets
+robbed, the keys will not be robbed as the keys
+are kept by user/client. 
+
+This is generally called as DKMS(Decentralized Key
+Management System), it is a special kind of encryption
+key management system that the server(central) is not
+responsible for storing them, it can be that 
+either multiple servers(not control by a single
+person or group) store them[BlockChain/TOR
+(Onion Routing)] or end to end encryption
+like WhatsApp/Signal which only sender or
+recipient can read the message or endpoint encryption
+which only a single user can read the
+encrypted message.  Some commonly known DKMS
+consists of blockchain, end to end encryption
+(Signal/WhatsApp/Session/Threema),
+endpoint encryption.
+
+This was generally better than decrypting the
+message on server as it means that by attacking
+or hacking the server, the encryption on data
+or messages can't be undone. Hence, from a security
+point of view, this is better and safer.
+
+===========================
+4th step hugely limiting
+the generation or 
+using of metadata
+===========================
+
+What is metadata? In general people don't understand
+about metadata. In most cases, people thought it's 
+only something that only people who wants privacy
+cares about.
+
+However, this is no longer the case. The definition
+of metadata is data describing data excluding its
+content. This seems to be a term that many can't 
+understand. 
+
+What does it exactly mean? The most common way of
+generating metadata is when we are using anything
+online. Imagine that we go to any shopping website,
+we picked let's say sports products or make up 
+products, in here, the server/service provider 
+does not need to know exactly what we buy in details,
+the category of the product is what they need. The
+same example can be applied to when we choose
+any paid or free novel online and read them, similarly,
+the server/service provider does not need to know
+what book did we choose to read, the category is
+what matters. This is one of the form of metadata
+called customers likes/dislikes metadata. Imagine
+that we are talking on messaging application,
+let's assume the content is not known to the server/
+service provider, however, the server/service
+provider might know the following and collects them
+which includes when users talk to each other, how
+frequent did they talk, what names or relations
+of the contacts that the user set/have, this is
+consider as surveillance type metadata. Imagine
+that we are on social media or on any news/
+information platform, under normal circumstances
+we can't control ourselves and expresses thoughts/
+opinions regarding a post or certain information/
+news, this is consider as behavior or opinion type
+metadata. 
+
+Don't get the wrong idea, these data is extremely
+important to services/corporate/businesses/company
+, however, we can't be sure that these data won't
+be leaked/breached. What happens after they leaked/
+breached? 
+
+Many people might say that there's nothing to worry
+about but not really the case. Do you understand
+the power that comes from just combining data 
+analysis and AI? If we are so sure and certain that
+these data is consider minimum in corporate/businesses
+/company, can we actually say the same from a user
+/client side point of view? No,we can't. Considering
+that many people would not care and these data 
+keep on generating regardless if it's on famous
+or influential corporate or a nobody websites that
+comes from someone not so influential. We can't as
+a corporate/businesses/company say to our clients/
+users, the metadata leakage is not that important
+as we directly or indirectly contributes to it.
+
+People in marketing might know that these data
+are extremely valuable in advertising or for
+company/corporate/businesses services improvement.
+
+If we can't be sure that such metadata are not leaked/
+breached in a huge scale regardless if it's one time
+based or accumulated over time, then we have something
+to worry about. This is simply because by 
+performing data analysis and use AI in the process,
+public identity(email addresses/phone numbers), metadata
+and normal data can in theory create a perfected virtual
+clone of users in dark/deep web which people(malicious)
+can use to conduct cyber crimes or crimes. When such day
+happens, corporate/businesses/company will be hit by
+new form of cyber attacks that no man ever see, if 
+corporate/businesses/company can't identify if the cyber
+crimes comes from user or from cyber criminal then 
+corporate/businesses/company can't file a correct and
+suitable lawsuit against them. If corporate/businesses/
+company can't identify such threats original sources
+then the same can be said to any government agencies/
+law enforcers.
+
+Even though not that common yet, but currently government
+agencies/law enforcers/corporate/businesses/company 
+did indeed catch wrong people or file lawsuit towards
+wrong people.
+
+Currently, I hope that this is something that everyone
+should worry about. I also hope that huge money
+goes into academic research to either reduce such case
+from happening or totally prevents it which in simplify
+terms a special "antivirus". 
+
+In either case, on the time that this document written,
+I don't see that people cares about it enough.
+
+===========================
+5th collects only public
+or not crucial/private/
+sensitive data
+===========================
+
+This is actually pretty much self explanatory,
+because if only public disclosable data was
+collected, then the server/network pretty
+much has no legitimate value for any
+malicious hackers or insider to hack at
+the first place but in majority of the
+cases, companies have a huge incentive
+to collect as much data as possible as
+they made money through such action.
+
+However, in most cases, we have to store
+certain not public disclosable data,
+the best we as a company/corporate/businesses
+can do was to achieve the almost ideal phase
+of this step. 
+
+===========================
+6th(last) Type of Source
+Code (Open/Close) and 
+backdoor
+===========================
+
+Many people might ask ..? What exactly is backdoor?
+Let's assume that we have a phone and we put finger
+or thumb print lock on it, under normal circumstances,
+be it law enforcers or be it malicious people, they
+can't bypass the thumprint or fingerprint lock and they
+have to have the fingerprint or thumprint or password
+to unlock the phone. What backdoor does is allow a 
+specific not commonly known to public way to bypass 
+such security mechanism.
+
+Source code refers to any sentences or words that programmers
+write to make a functional software/system or application.
+
+In most of the cases, by making the source code publicly
+visible and to audit by public, it does not necessarily
+means that installing backdoor is impossible but it's almost
+impossible to do so.
+
+That's the power of open source. I don't think that close
+source did indeed exists backdoor but in most cases,
+they are more likely to have backdoor from an objective
+point of view.
+
+===========================
+Side Note and Conclusion
+===========================
+I do believe that each security model be it pre-compromise
+or post-compromise security has their own pros and cons.
+
+But in general, I would hope majority of the research 
+funding does not only goes to pre-compromise security model
+, post-compromise security model should also be prioritized.
+
+Many of the person or corporate/businesses/company that
+choose post-compromise security in extreme cases, they have
+to be smart enough to invent the wheel as majority of the
+problems they faced can't be solved or not solvable as
+majority research goes into pre-compromise security
+rather than post-compromise.
+
+I believe that data analysis and AI can also be used in
+post-compromise security, but as this is not a model that
+majority embraces. There's almost little to no academic
+or industry research takes place in such model.
+
+Security and privacy of user must exists, but at the time
+that this document was written, there's no ways to
+actually guarantee both security and privacy of user and
+at the same time fits corporate/businesses/company
+self interests and this is worse in post-compromise security
+model.
+
+In most cases, it's best to have a combination of both
+pre and post compromise security in corporate. But
+if one really can't afford hiring experts that excel
+in pre-compromise security, the difficulty and security
+strength of post-compromise security is consider both
+easier and more secure.
+
+============================================================
