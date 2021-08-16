@@ -1,0 +1,74 @@
+Format of SSH private key(ED25519)
+
+It will begin with string "openssh-key-v1"
+which in hexa representation it's "73 73 68 2d 65 64 32 35 35 31 39",
+the total bytes count is 11.
+
+It will then add 1 single null terminated string
+which in hexa representation it's "00",
+the total bytes count is 1.
+
+It will then tell the system what the length and name of
+the cipher. The first 4 bytes refers to the length of the
+string that represents the cipher, the other bytes that
+follows will be the ASCII string that represents the
+cipher name. If there's no cipher name specified, the
+default cipher name will be "none" string.
+
+It will then tell the system what the length and name of
+the kdf used. The first 4 bytes refers to the length of the
+string that represents the kdf. The other bytes that follows
+will be the ASCII string that represents the KDF name. 
+If there's no cipher name specified, the
+default cipher name will be "none" string.
+
+(From what I understand, it might be wrong). It will then
+use 4 bytes to tell the system how many rounds the kdf will
+use. [On my ubuntu VPS, I didn't use passphrase/password to
+generate, hence it's totally generated from randomness], due
+to the absence of the kdf rounds. All 4 bytes was 00 in hexa.
+
+It then comes along with the 4 bytes which tells the number of
+keys. By default, it should be "00 00 00 01".
+
+Still remember how the SSH public key file look like? It will use
+4 bytes to indicate the length of the string exists in the SSH public
+key file. If you use root, you should be able to get exactly 51 bytes
+in length. If that's the case, you should be seeing "00 00 00 33" which
+tells the system that the public key file's content string length is 51
+bytes. 
+
+After that it will transform all of your public key file string content
+into hexa decimal. In my case, it uses 51 bytes in length but it varies
+on your public key file.
+
+It will then uses 4 bytes to tell the length to the system by combining
+the length of rnd + private key + comment(the username + @ + ubuntu that
+exists in your public key file) + padding(can be 1 or 2 or 3 bytes).
+Currently it shows "00 00 00 90" which is 144 bytes length in total(
+consists of rnd + private key + comment + pad).
+
+It will then randomly generate a checksum of 4 bytes and repeats itself.
+It will use 8 bytes in total. Some example will be "f1 5b eb 77 f1
+5b eb 77". 
+
+(In my case)It will repeat all the contents of public key file
+in bytes(51). You can see a similar Base64 encoded string with the public
+key generated in the public key file.
+
+It will then uses 4 bytes to tell the length of private key to the system.
+You should always get "00 00 00 40". This tells the system the private key
+of ED25519 is always 64 bytes in length.
+
+It will then uses 64 bytes to show the ED25519 private key.
+
+It will then uses 4 bytes to tell the system the length of the comment
+in public key file. 
+
+It will then show the comment(string) in bytes.
+
+It will then show the padding bytes in hexa decimal. In my case,
+the padding is only 2 bytes "01 02". I am suspecting that the padding
+can either be 1 padding byte or 2 padding byte or 3 padding bytes.
+For details you can loook up to this link.
+https://coolaj86.com/articles/the-openssh-private-key-format/
