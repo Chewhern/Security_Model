@@ -46,7 +46,15 @@ It will then uses 4 bytes to tell the length to the system by combining
 the length of rnd + private key + comment(the username + @ + ubuntu that
 exists in your public key file) + padding(can be 1 or 2 or 3 bytes).
 Currently it shows "00 00 00 90" which is 144 bytes length in total(
-consists of rnd + private key + comment + pad).
+consists of rnd + private key + comment + pad). In my case, private key
+was 64 bytes in length and there's another 4 bytes that was used to let
+the system know the length of private key. The actual private key length
+was 68. The comment string was 11 bytes long, there's another 4 bytes
+used to let the system know the length of the comment string. The actual
+comment string was 11 bytes. The padding is 2 bytes long. If we sum it up
+together we will only get 87 bytes. The rnd variable depends on the checksum
+bytes length and the total public key length(The base64 encoded public key).
+If we sum it up altogether, we will get back the 144 bytes length.
 
 It will then randomly generate a checksum of 4 bytes and repeats itself.
 It will use 8 bytes in total. Some example will be "f1 5b eb 77 f1
