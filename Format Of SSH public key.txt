@@ -1,0 +1,23 @@
+In total it consists of 51 bytes(ED25519)
+
+First 4 bytes(Hexa) refers to the length of the string ("ssh-ed25519")
+Most likely the hexa representation will just be "00 00 00 0b"
+which is 11 characters length
+
+It then comes with the string of "ssh-ed25519" which in hexa
+representation, it's "73 73 68 2d 65 64 32 35 35 31 39", 11 bytes.
+
+It then uses 4 bytes to let the system knows how long was the public
+key. In hexa representation it's 4 bytes "00 00 00 20", it's also
+refers to the public key has 32 bytes.
+
+It then comes with 32 bytes public key.
+
+If people would want to extract their own ssh ed25519 keys, they would
+need to remove the first 19 bytes.
+
+In any of the SSH public key file, it will have this format,
+"ssh-ed25519 (The format of public key shown above in base64) (username)@ubuntu"
+
+Reference link:
+https://security.stackexchange.com/questions/161105/ssh-ed25519-key-extract-pk-32-bytes
