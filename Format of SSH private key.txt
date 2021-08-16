@@ -51,7 +51,7 @@ was 64 bytes in length and there's another 4 bytes that was used to let
 the system know the length of private key. The actual private key length
 was 68. The comment string was 11 bytes long, there's another 4 bytes
 used to let the system know the length of the comment string. The actual
-comment string was 11 bytes. The padding is 2 bytes long. If we sum it up
+comment string was 15 bytes in length. The padding is 2 bytes long. If we sum it up
 together we will only get 87 bytes. The rnd variable depends on the checksum
 bytes length and the total public key length(The base64 encoded public key).
 If we sum it up altogether, we will get back the 144 bytes length.
