@@ -319,6 +319,10 @@ terms a special "antivirus".
 In either case, on the time that this document written,
 I don't see that people cares about it enough.
 
+(Update: Perfect cloning is not possible, but it's
+possible to create a clone of user, the accuracy
+% is something that we don't know at the moment)
+
 ===========================
 5th collects only public
 or not crucial/private/
