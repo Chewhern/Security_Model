@@ -292,17 +292,19 @@ based or accumulated over time, then we have something
 to worry about. This is simply because by 
 performing data analysis and use AI in the process,
 public identity(email addresses/phone numbers), metadata
-and normal data can in theory create a perfected virtual
+and normal data can in theory create a virtual
 clone of users in dark/deep web which people(malicious)
-can use to conduct cyber crimes or crimes. When such day
-happens, corporate/businesses/company will be hit by
-new form of cyber attacks that no man ever see, if 
-corporate/businesses/company can't identify if the cyber
-crimes comes from user or from cyber criminal then 
-corporate/businesses/company can't file a correct and
-suitable lawsuit against them. If corporate/businesses/
-company can't identify such threats original sources
-then the same can be said to any government agencies/
+can use to conduct cyber crimes or crimes[The accuracy % is
+something that we don't know].
+When such day happens, corporate/businesses/company
+will be hit by new form of cyber attacks that no man
+ever see, if corporate/businesses/company can't 
+identify if the cyber crimes comes from user or from 
+cyber criminal then corporate/businesses/company
+can't file a correct and suitable lawsuit
+against them. If corporate/businesses/company can't
+identify such threats original sources then the 
+same can be said to any government agencies/
 law enforcers.
 
 Even though not that common yet, but currently government
