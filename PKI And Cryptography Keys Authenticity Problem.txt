@@ -14,7 +14,7 @@ it's hard to tell whether the other end of the conversation is really Bob/Alice.
 trying to mimic Alice/Bob. That is the problem that PKI(Public Key Infrastructure) is meant to solve.
 [https://en.wikipedia.org/wiki/Public_key_infrastructure]
 
-Please refer to this link to get a basic understanding of what's PKI in a visualized animated way.
+Please refer to this link to get a basic understanding of what's PKI through visualized animation.
 (https://www.youtube.com/watch?v=i-rtxrEz_E8)
 
 ============PKCS with PKI (No cryptography keys authenticity problem)==========================================
