@@ -1,15 +1,20 @@
 (Opinion and knowledge sharing)
-In symmetric encryption algorithm like AES,ChaCha20 or Salsa20, the encryption and decryption is always done by
+In symmetric encryption algorithm like DES,AES,ChaCha20 or Salsa20, the encryption and decryption is always done by
 using a single key.
 
-Cryptographers and people have started to realized that this isn't going to work in data sensitive environment.
-Hence, they explored and created a new kinds of ways to deliver the keys safely(Public Key Cryptography).
+Symmetric encryption algorithm was used in a lot of environment. However, it creates a key distribution problem.
+Hence, cryptographers and people explored and created a new kinds of ways to deliver the keys safely(Public
+Key Cryptography)[https://en.wikipedia.org/wiki/Public-key_cryptography].
 
-By itself, cryptography keys don't have a rightful owner. In situation where PKI(Public Key Infrastructure)
-is not used, Alice and Bob can still have a conversation with each other online. However, it's hard to tell
-whether the other end of the conversation is really Bob/Alice. It can be imposters trying to mimic Alice/Bob.
+By itself, cryptography keys don't have an identifiable owner. Before PKI there was "a web of trust is a concept 
+used in PGP, GnuPG, and other OpenPGP-compatible systems to establish the authenticity of the binding between
+a public key and its owner."[https://en.wikipedia.org/wiki/Web_of_trust].In situation where PKI(Public Key 
+Infrastructure) is not used, Alice and Bob can still have a conversation with each other online. However, 
+it's hard to tell whether the other end of the conversation is really Bob/Alice. It can be imposters 
+trying to mimic Alice/Bob. That is the problem that PKI(Public Key Infrastructure) is meant to solve.
+[https://en.wikipedia.org/wiki/Public_key_infrastructure]
 
-What exactly is PKI? Please refer to this link for more information for a basic understanding of what's PKI.
+Please refer to this link to get a basic understanding of what's PKI in a visualized animated way.
 (https://www.youtube.com/watch?v=i-rtxrEz_E8)
 
 ============PKCS with PKI (No cryptography keys authenticity problem)==========================================
