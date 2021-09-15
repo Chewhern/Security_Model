@@ -1,2 +1,14 @@
 What is MAC(Message Authentication Code)?
 
+When we encrypt message with stream cipher, the message is encrypted but
+this does not stop attacker/hacker from being able to change or tamper
+with the encrypted message due to the XOR operation used in stream cipher.
+
+We use cryptography hashing in a special way to generate a special random
+unique "summary" that only a certain party can generate the same "summary".
+This special technique is called MAC(Message Authentication Code). This 
+specially random generated "summary" will append to the encrypted message
+to prevent the stream cipher encrypted message from being changed/tampered.
+
+For  more details, refer to this link(computerphile) for more information.
+(https://www.youtube.com/watch?v=wlSG3pEiQdc)
