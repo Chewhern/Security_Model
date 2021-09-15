@@ -25,6 +25,6 @@ way I shown above.
 
 In current computer world, 128 bits of key sizes is consider not breakable. However, if
 big quantum computer world appears, the key sizes will be reduced by 50%. It means that
-in quantum computer will break 128 bits of symmetric key size just like 64 bits of symmetric
+quantum computer will break 128 bits of symmetric key size just like 64 bits of symmetric
 key sizes and the list goes on. If that time comes, 256 bits key is good enough to withstand
 quantum computers.
