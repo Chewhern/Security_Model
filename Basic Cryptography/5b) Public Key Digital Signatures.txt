@@ -1,1 +1,34 @@
 What is Public Key Digital Signatures?
+
+PKCS digital signature is designed for solving data integrity and authenticity.
+You can assume PKCS digital signature acts the same like real life signature but
+better in all aspects.
+
+If you are able to understand PKCS, you will know that PKCS consists of public key
+and private key. Given only public key, it's computational impossible to find the
+private key.
+
+In PKCS digital signature, we reverse the roles of the keys. We use private key
+to encrypt data and public key to decrypt data. It's very similar to asymmetric
+encryption or public key encryption. 
+
+It works by hashing the data(document/files/others that might be applicable) to
+create a random unique nonsense summary, we then use our private key to encrypt/sign
+that summary. We send the encrypted summary along with the document to the recipient.
+
+You as a sender don't care for confidentiality but you do care for data integrity/
+authenticity. You give the recipient(trusted) public key. The recipient will hash
+the file again to see if the summary match. To further ensuring it comes from you
+the sender, the recipient will decrypt the encrypted summary to see if it matches
+with the normal non encrypted summary. 
+
+This process ensures that the file/document/data/other that might applicable has 
+data integrity and authenticity. Just like in real life, we put signatures on
+certain document. PKCS digital signature is an enhanced version of real life
+signature. 
+
+Here's the link on how digital signatures work.
+https://www.youtube.com/watch?v=JR4_RBb8A9Q
+
+If you want to play with digital signature, go to this link below.
+https://8gwifi.org/RSAFunctionality?rsasignverifyfunctions=rsasignverifyfunctions&keysize=2048
