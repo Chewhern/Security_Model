@@ -5,3 +5,12 @@ example described in public key cryptography system document.
 
 If you want to play with asymmetric encryption, here's the link.
 https://www.devglan.com/online-tools/rsa-encryption-decryption
+
+In PKCS, the encryption will always be fast but the decryption will always
+depends on the key sizes. The bigger the key sizes, the slower the decryption
+process.
+
+Unlike symmetric encryption, the splitting of data into block and encrypt
+/decrypt the block in PKCS encryption/decryption is not automatic. It's harder
+to split data into block and encrypt in PKCS encryption/decryption as it's
+very easy to mess up compare to symmetric encryption.
