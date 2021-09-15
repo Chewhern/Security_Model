@@ -1,0 +1,21 @@
+Block Cipher is another type of symmetric encryption.
+
+Block cipher takes 128 bits of messages as a block and encrypt the
+content of the block into cipher text.
+
+Assume our message was "I'm feeling good", when we convert it into
+binary numbers, we should get 128 bits of message in binary format.
+
+Our key was "Demonstration222", when we convert it into binary numbers,
+we should get 128 bits of key in binary format.
+
+You can play with block cipher through this link:
+https://www.devglan.com/online-tools/aes-encryption-decryption
+
+When you play with this link, choose "Hex" in both "Output Text Format"
+and "Input Text Format". If you have done this correctly, you should be
+able to encrypt/decrypt properly.
+
+If you want to supply your own key, 128 bits refers to 16 bytes or refers
+to 16 english characters(including spaces and special characters), 192 bits
+refers to 24 bytes and 256 bits refers to 32 bytes.
