@@ -1,0 +1,24 @@
+What is symmetric encryption?
+
+Symmetric encryption is a encryption/decryption process that uses only single key.
+You can think of symmetric encryption as a simple lock on our physical door that has
+only one lock and one key.
+
+In digital world, you can assume the key was your password. You use the password to
+encrypt/decrypt data.
+
+Symmetric encryption is a very fast encryption process. However.., it becomes a problem.
+Why? If you encrypt a document/data with passwords, you have to find some way to share the
+passwords with others. If you share it on phone/video/voice call or through email or through
+some messenger like WeChat(exclude whatsapp/signal/session/threema/matrix), the chances is
+other unwanted third party may know your passwords. Hence the encryption that you put onto
+the data/document is useless. 
+
+There're 2 types of symmetric encryptions:
+1. Stream Cipher
+2. Block Cipher
+
+In general there're 3 standard sizes for symmetric encryption, which are 128 bits, 192 bits
+and 256 bits.
+
+These sizes have a meaning. Other documents may describe it.
