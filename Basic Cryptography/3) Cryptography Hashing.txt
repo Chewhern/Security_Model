@@ -1,0 +1,24 @@
+What is cryptography hashing?
+Cryptography hashing is a process where you turns incredibly small or huge amount of data into fixed
+size of a random unique nonsense or summary.
+
+Cryptography hashing is a one way process of turning data into random non sensible unique summary.
+
+It's generally used in data integrity,authentication and expanding/shrinking data.
+
+Let's assume that you are reading a novel or watching a movie. The summary or introduction summarizes
+the novel content and the movie content. You can think of cryptography hashing as random unique
+summarized novel content and movie content(summary/introduction). If summary or introduction does not
+exist, we as a viewer/reader need to go through the whole content of the movie/novel to understand
+the content of movie/novel. Not to mention during the process, the novel/movie that we received
+may miss some parts of the content or data and might not be authentic. You may not notice it
+but when we receive software/files online(presumably receive by downloading) have a small not
+sensible random summary which users can verify through cryptography hashing process.
+
+Here's a simple toy that you can play with.
+https://www.tools4noobs.com/online_tools/hash/
+
+The real life application of cryptography hashing includes but not limit to:
+1. They can be used to make a summary of the passwords
+2. They can be used to make a summary of files/documents/softwares/data
+3. The summarized passwords can be used as a source for encryption/decryption keys
