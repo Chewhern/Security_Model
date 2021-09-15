@@ -1,0 +1,30 @@
+What is 128 bits,192 bits and 256 bits key in symmetric encryption?
+
+Computer generally runs on binary which consists of only 2 values which are 0 or 1.
+
+Let's assume that you are in a classroom, the classroom has a size which it allows
+128 students sitting in the classroom. 128 bits refers to 128 students/seats in the
+classroom.
+
+128 bits of key consists of 128 seats/students which can only allow the value of either
+0 or 1.
+
+The initial value of 128 bits key was shown below
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000
+
+The final value of 128 bits key was shown below
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+11111111111111111111111111111111111111111
+
+Between these 2 values, there're 2^128 combinations to go through or "2 to the power of 128"
+combinations.
+
+The same case can be said to 192 bits and 256 bits. You can assume the bits work in a similar
+way I shown above.
+
+In current computer world, 128 bits of key sizes is consider not breakable. However, if
+big quantum computer world appears, the key sizes will be reduced by 50%. It means that
+in quantum computer will break 128 bits of symmetric key size just like 64 bits of symmetric
+key sizes and the list goes on. If that time comes, 256 bits key is good enough to withstand
+quantum computers.
