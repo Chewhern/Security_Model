@@ -1,1 +1,7 @@
 What is public key encryption(asymmetric encryption)?
+
+Public Key Encryption or Asymmetric encryption is exactly the mailbox
+example described in public key cryptography system document.
+
+If you want to play with asymmetric encryption, here's the link.
+https://www.devglan.com/online-tools/rsa-encryption-decryption
