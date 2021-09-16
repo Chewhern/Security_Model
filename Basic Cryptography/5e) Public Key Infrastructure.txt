@@ -1,1 +1,26 @@
+What is PKI(Public Key Infrastructure)?
 
+Public Key Infrastructure is a cryptography mechanism in which
+we try to solve the identity problem in PKCS.
+
+I am not qualified to explain how PKI works, for more
+details. Please refer to this link below.
+https://www.youtube.com/watch?v=i-rtxrEz_E8
+
+PKI itself is not a 100% secure system, the private key
+that they used to sign the certificate or public key
+will have a chance to expose to the internet through
+any data leakage/breaches incident. If the private key
+was leaked/breached on PKI service provider, the whole
+PKI mechanism breaks(to an extent).
+
+The certificate that we send to PKI service provider
+will also have a chance to leak the private information
+associated on it.
+
+These 2 flaws are not solvable, any online secure internet
+connection to a server/website will always need to bear with
+the risks/drawbacks associated with PKI.
+
+PKI by itself is suitable in environment that prefers
+security but not privacy. 
