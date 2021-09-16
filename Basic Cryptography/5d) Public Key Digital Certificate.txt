@@ -1,1 +1,10 @@
+What is PKCS Digital Certificate?
 
+Certificate is a document that binds identity such as IP addresses,
+email address, phone number, real life credentials with a public
+key of any kind(DFKX, Digital Signatures).
+
+It can be used in cryptography processes to establish a shared secret
+through DFKX or it can be used to bind an identity to a document(files/softwares)
+with a public key of any kind and it can be used to identify if an individual
+within a company/corporate/business have access to the system.
