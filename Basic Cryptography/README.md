@@ -136,7 +136,8 @@ of RSA. Here's the list of paramaters:
 Exponent and D must fulfill an equation in which Exponent x D divide by N
 then get its remainder. The remainder must equal to 1. 
 
-In general, we will first find an exponent in which it has a **GCD** of 1
+In general, we will first find an exponent in which it has a **GCD(Greatest Common
+Divisor)** of 1
 with N (There're many ways to find exponent and D value which satisfies the
 equation. However, let's do it my way). In industry, the exponent was always
 a fixed small number(A prime number value of 65537). Once we have found the
