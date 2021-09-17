@@ -186,7 +186,8 @@ However.. If big quantuam computer arrives, getting private key through public k
 very easily. In RSA, this was affected heavily by an algorithm call **"Shor's algorithm"**, which
 is impossible to do with current computer but it's very easy to do with big quantum computer.
 
-This can also be apply to Elliptic Curves, Diffie Hellman Key Exchange.
+Similar attacks can also be apply to Elliptic Curves, Diffie Hellman Key Exchange. This's the
+reason why researchers(cryptography) all over the world is trying to find QC resistant PKCS.
 
 ## Continuation of PKCS public key encryption
 
