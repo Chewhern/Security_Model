@@ -114,3 +114,114 @@ MAC was appended in front of Stream Cipher encrypted text
 596715b3cda7a421ff02a517eb494830ca5256b60043360156803e024e87a3
 dc53e70b3d4eb1643b3c6f1fbb5a1b2c5bdd0c4905c429104ad8d9ba0b4aa837
 ```
+
+## Continuation of PKCS
+PKCS in general is a cryptography system that consists of public and
+private key. However.., I believe many people may not understand it.
+
+Let's use RSA as an example(Mathematics). There're several parameters
+of RSA. Here's the list of paramaters:
+
+1. P (Random Big Prime Number)
+2. Q (Random Big Prime Number)
+3. Modulus (P x Q)
+4. N (P-1) x (Q-1)
+5. Exponent
+6. D
+
+**Note: Prime number refers to it has only 2 factors which is 1 and itself,
+2 is a prime number, 3 is a prime number, 5 is a prime number, 7 is a prime number,
+11 is a prime number.**
+
+Exponent and D must fulfill an equation in which Exponent x D divide by N
+then get its remainder. The remainder must equal to 1. 
+
+In general, we will first find an exponent in which it has a **GCD** of 1
+with N (There're many ways to find exponent and D value which satisfies the
+equation. However, let's do it my way). In industry, the exponent was always
+a fixed small number(A prime number value of 65537). Once we have found the
+value of exponent, we can find the value of D through ModularInverse(Do your
+own research). 
+
+Here's a sample run.
+1. P=197
+2. Q=199
+3. Modulus = 39203
+4. N = 38808
+5. Exponent = 5
+6. D = 23285
+
+
+The variables that made up RSA public key was (Modulus,Exponent). The variables
+that made up RSA private key was (Modulus, D). Due to the fact that Modulus
+is present in both public and private key of RSA. The value of Modulus(if website
+certificate uses RSA, you can see a long list of numbers) was automatically consider
+as public value.
+
+The encryption formula of RSA was:\
+Encrypted Message = Message ^ Exponent % Modulus\
+**Note: "^" is a mathematical symbol that refers to power/exponentiation\
+"%" is a programming/coding symbol that refers to divide 2 values and get its
+remainder**
+
+The decryption formula of RSA was:\
+Decrypted Message = Encrypted_Message ^ D % Modulus
+
+Let's say, I give you only public key of RSA which is Modulus(39203) and Exponent(5).
+I ask you what is my P,Q,N and D..? You have no idea.. What values do I pick and use.
+It's very easy to calculate Modulus,N,Exponent and D if I give it any P or Q value. It's
+not an easy task to try and get P and Q through Modulus. P and Q is randomly chosen big
+prime numbers.
+
+In modern industry, Exponent was always 65537(a prime number with special characteristics).
+Hence, the attack can only be perform on Modulus. 
+
+The process of finding possible P and Q value used in creating Modulus value was call
+solving the discrete logarithm problem.
+
+This small example describes why it's useless to obtain only PKCS's public key. The process
+of finding private key through public key is not doable.
+
+However.. If big quantuam computer arrives, getting private key through public key can be done
+very easily. In RSA, this was affected heavily by an algorithm call **"Shor's algorithm"**, which
+is impossible to do with current computer but it's very easy to do with big quantum computer.
+
+This can also be apply to Elliptic Curves, Diffie Hellman Key Exchange.
+
+## Continuation of PKCS public key encryption
+
+Let's use RSA as an example. Assuming the message we want to encrypt in its number format was "84"
+(T), we use the above sample exponent and modulus.
+
+We can use the encryption formula to encrypt the "84". We will then get the encrypted data which was
+"23285".
+
+We can use the decryption formula to decrypt the "23285". We will then get the decrypted data which
+was "84"(T).
+
+Due to the fact that RSA has big decryption key, the bigger the decryption key gets, the slower
+the process of decryption. 
+
+In RSA, we can't encrypt message that's bigger than the modulus. If the message value was bigger
+than the modulus value. We need to split the data into smaller chunks and decrypts it. Unlike
+symmetric encryption algorithm like AES(Block Cipher), ChaCha20(Stream Cipher), Salsa20(Stream
+Cipher), the splitting process is not automatic, developer/user will need to split the data
+by implementing logic.. Often the case.., not only this is problematic, it will also allow more
+attacks to perform on RSA. 
+
+## Continuation of PKCS digital signature
+
+Let's use RSA as an example. Assuming the message we want to encrypt in its number format was "84"
+(T), we use the above sample exponent,modulus and D.
+
+We can use the decryption formula to encrypt the "84". We will then get the encrypted data which was
+"37499".
+
+We can then use the encryption formula to decrypt the "37499". We will then get the decrypted data
+which was "84". 
+
+When we use RSA decryption formula to encrypt data. This was call signing like in real life's signature.
+When we use RSA encryption formula to decrypt data. This was call signature verification.
+
+Similar concept was used in DSA(Digital Signature Algorithm), ECDSA(Elliptic Curve Digital Signature
+Algorithm) and ED25519 or ED448 (State of the art Elliptic Curve Digital Signature Algorithm).
