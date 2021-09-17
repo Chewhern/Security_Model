@@ -1,7 +1,16 @@
 What is public key encryption(asymmetric encryption)?
 
-Public Key Encryption or Asymmetric encryption is exactly the mailbox
-example described in public key cryptography system document.
+Public Key Encryption or Asymmetric encryption is a PKCS system
+that uses public key to encrypt and private key to decrypt.
+
+We can try to understand public key encryption with a real life example.
+Let's assume we have sender and recipient. Sender wants to send a physical
+mail to recipient. The sender gets the recipient mail box address and throws
+the mail into the mailbox of the recipient. The recipient mail box was locked
+with a key and lock. Anyone can send email to the recipient mail box but only
+the recipient is able to unlock the mailbox and read all the mails.
+
+The mail box address and lock is public key and the mailbox key was private key.
 
 If you want to play with asymmetric encryption, here's the link.
 https://www.devglan.com/online-tools/rsa-encryption-decryption
