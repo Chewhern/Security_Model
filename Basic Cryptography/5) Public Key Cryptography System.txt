@@ -6,14 +6,7 @@ symmetric encryption, PKCS consists of one public key and one private
 key.
 
 In digital world, PKCS's public key and private key is either in binary
-numbers or normal large numbers. Let's try and look at a more user-
-friendly example. Let's imagine, you have a mailbox and its corresponding
-address, the paper mail's delivery guy delivers the mail to your mailbox.
-Presuming your mailbox was locked with a lock, only you are able to unlock
-the mailbox because you own the mailbox's lock key. 
-
-The mailbox, its corresponding address and the lock was public. This was
-public key. The key to unlock the lock on mailbox is private key.
+numbers or normal large numbers. 
 
 The argument in PKCS was if only public key was given, the attacker or
 non-trusted parties are unable to get the private key. It's not
