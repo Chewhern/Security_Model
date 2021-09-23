@@ -70,7 +70,7 @@ such feature. The main reason was due to the extreme complexity and
 ever changing demand on client side.
 
 4. Client won't be able to login/decrypt if any of the client's
-internal staffs lost their keys(can be passwords/phrase of PKCS
+internal staffs lost their keys(can be passwords/phrase or PKCS
 private key). 
 
 ### Side Note
