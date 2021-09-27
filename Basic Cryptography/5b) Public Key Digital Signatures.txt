@@ -32,3 +32,8 @@ https://www.youtube.com/watch?v=JR4_RBb8A9Q
 
 If you want to play with digital signature, go to this link below.
 https://8gwifi.org/RSAFunctionality?rsasignverifyfunctions=rsasignverifyfunctions&keysize=2048
+
+If you can't understand the math.., here's an article that can
+help you understand.
+
+https://auth0.com/blog/how-to-explain-public-key-cryptography-digital-signatures-to-anyone/
