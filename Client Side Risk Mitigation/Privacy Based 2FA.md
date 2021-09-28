@@ -56,3 +56,9 @@ it as double public key authentication.
 1. It's quite problematic for user as the convenient aspect had lost
 2. It's impossible to know whether the user uses the same device for double public key authentication
 3. It's an increased risk on user side as losing either of the devices will cause serious troubles to user
+
+
+### Problems that caused by using double public key authentication (Server side)
+1. Depending on the situation, there's a chance that hackers can change the public keys with their own public keys
+which may or may cause some troubles to users despite there's no literal meaningful value on them doing so. (It can be
+solve with smart contract in blockchain. However, blockchain smart contract will also have its own drawbacks)
