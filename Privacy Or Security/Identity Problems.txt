@@ -1,0 +1,12 @@
+(Opinion and knowledge sharing)
+Let's take a moment and think what we had done in our life especially in 21st century.
+We signed up for services like online banking, E-commerce, Payment Platforms, Facebook,
+Google, Amazon, Ebay, Alibaba, Netflix. Some of the services we use are essential while
+the others are for entertainment. There's a reason why I listed these services out.
+Their mutual characteristic "requires" users to submit their identity or credentials to
+work.
+
+There're a lot of forms in identity or credentials. The services commonly require the
+submission of biometrics(fingerprint),emails, phone numbers and IP addresses. Why?
+
+You use biometrics such as fingerprint to lock/unlock your phone or bank account.
