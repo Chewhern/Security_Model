@@ -7,6 +7,61 @@ Their mutual characteristic "requires" users to submit their identity or credent
 work.
 
 There're a lot of forms in identity or credentials. The services commonly require the
-submission of biometrics(fingerprint),emails, phone numbers and IP addresses. Why?
+submission of emails, phone numbers and IP addresses. Why?
 
-You use biometrics such as fingerprint to lock/unlock your phone or bank account.
+When you register for a service, it's usually done through submitting emails. Why is
+that? If you forget your account password, you can just request for resetting password
+through email. You can also get notified if someone tries to login into your account. 
+However what you have realized was instead of it being used in resetting
+password, it's also used in other purposes(marketing, data analyses and etc).
+
+When you register for a service(online banking or payment related), it's usually
+done through submitting emails and phone number. Why is that? When you want to make
+a payment or make any transaction, the service provider will be asking for a verification
+by sending you a PIN or numbers through email/phone number so that you can type in.
+
+How do you register a phone number? You may need to present something like an identity
+card or similar documents to the telecommunication provider so that they can help you
+in registering a phone number. 
+
+Who really owns the identity card or those documents..? You? Not really.. Your own
+nation's government. Can we trust them to protect the identity card or documents?
+It depends..
+
+When you sign up for whatever online services or telecommunication services, you are
+deemed to provide personal information to the service provider. The question then comes..
+Can you trust this chain from signing up a telecommunication services to the services
+like e-commerce or social media or other applicable platform?
+
+What you need to understand is this is consider as one of chain of trust that was being
+used thoroughly through out our daily lives that was built solely relying on private
+credentials or identity. It's also used in provider's services to verify that you are
+the exact owner instead of an imposter.. but the truth is this isn't complete... Under
+this chain.., any of the records can be changed or your identity(phone number/phone device)
+can be stolen. If this happens on any of the "chain(providers/government)", this whole
+mechanism built on identity can be consider broken and irrepairable. 
+
+This sounds good.. because we trust the providers and our government in protecting the
+credentials..? However, in reality, you can't really trust the providers and government
+in protecting these data as there're many cases that these credentials were leaked/
+breached happen on a daily basis with an uncertain scale.
+
+What happens if these credentials/private identity was leaked/breached? You may have heard
+of social engineering. Among the attacks in social engineering, the most famous attack is
+phishing. You receive a too good/bad to be true email or phone's SMS. If you don't have
+the security awareness you might fall into this trap. After you fall into the trap,
+what you may realized is your real life friends have put a distance to you and you might
+realized that your banking account or payment platform have paid some money to people who
+you don't know. This is the lightest negative effect that a user or you can experience.
+Don't worry.., there're heavier attacks as well but this is up to your imagination.
+
+Social engineering accounts for most of the remediation costs globally. You may look it
+up if you are wondering how serious it could be. The damage it costs to the economy
+of any nation is huge.
+
+Currently.., this submission of identity or credentials that was private to you or users
+is what build up our society.. Could there be an alternative such that we no longer relies
+on private credential/identity based system which was used globally and in a massive scale?
+The answer.. relies on you the users. You can choose to act and grow the privacy based 
+population as this is the only way out else.. we will be relying on this incomplete
+mechanism which builds up our society.
