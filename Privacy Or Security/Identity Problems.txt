@@ -2,7 +2,7 @@
 Let's take a moment and think what we had done in our life especially in 21st century.
 We signed up for services like online banking, E-commerce, Payment Platforms, Facebook,
 Google, Amazon, Ebay, Alibaba, Netflix. Some of the services we use are essential while
-the others are for entertainment. There's a reason why I listed these services out.
+the others are for entertainment. There's a reason why I list these services out.
 Their mutual characteristic "requires" users to submit their identity or credentials to
 work.
 
@@ -44,7 +44,7 @@ mechanism built on identity can be consider broken and irrepairable.
 This sounds good.. because we trust the providers and our government in protecting the
 credentials..? However, in reality, you can't really trust the providers and government
 in protecting these data as there're many cases that these credentials were leaked/
-breached happen on a daily basis with an uncertain scale.
+breached on a daily basis with an uncertain scale.
 
 What happens if these credentials/private identity was leaked/breached? You may have heard
 of social engineering. Among the attacks in social engineering, the most famous attack is
