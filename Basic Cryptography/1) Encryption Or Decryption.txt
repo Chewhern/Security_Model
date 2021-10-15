@@ -9,5 +9,3 @@ the encrypted message.
 Let's assume that you have an important physical valuable asset, you put that asset into
 a lockable box and locks it. This process was call encryption. If you unlock the lock on
 the box and take the asset out, this process was call decryption.
-
-These are the definitions of encryption and decryption.
