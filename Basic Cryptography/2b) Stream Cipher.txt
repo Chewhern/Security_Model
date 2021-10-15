@@ -1,51 +1,25 @@
-Stream Cipher is one of the type of symmetric encryption.
+What is bits?
+Computers are generally operating in binary number system (0,1) whereas human uses decimal
+or base 10 number (0,1,2,3,4,5,6,7,8,9) system. Bits are one of the computer terms.
 
-It generally uses XOR to perform encryption/decryption.
+Let’s look at an example. When we want to pay 2 dollar to a convenient store staff, we
+take out our wallet and count 1 dollar.. 2 dollar. Once we think that there’s enough
+money we proceed to give the staff 2 dollar as a payment.
 
-What is XOR..?
-Let's assume that there're 2 binary numbers which consists of 4 bits.
+In human world we can count up from 0,1,2,3,4,5,6,7,8,9,10,11……., this is how we
+count numbers and how we deal with numbers.
 
-1. 0101
-2. 0110
+In computer world, it was represented differently. What you need to look at was the
+computer representation of numbers after the “?-” symbols.
+0?-00, 1?-01, 2?-10, 3?-11
+4?-100, 5?-101, 6?-110, 7?-111
+8?-1000, 9?-1001, 10?-1010, 11?-1011, 12?-1100
 
-If we perform XOR to these 2 binary numbers, we will get a result of
-0011. This is how XOR works 1+1=0, 0+0=0, 1+0=1.
-
-In stream cipher, we take the message(encrypted/normal)
-and convert it into binary numbers (shown above). We then XOR the
-message with a random symmetric key that has also been converted
-into binary numbers.
-
-You can play with XOR calculator through this link.
-https://xor.pw/
-
-You can generate a random key through this link.
-https://www.mobilefish.com/services/pseudorandom_number_generator/pseudorandom_number_generator.php#big_random_number_output
-
-First of all you will need to generate a random key through the
-link above. You will need to scroll down until you saw "Number of
-bytes","Encoding" and "Separator". Type 32 in "Number of bytes",
-choose hexadecimal in "Encoding" and choose none in "Separator".
-Once you have done that, you will need to click on the "Generate"
-button. Scroll down again until you saw values which similar to
-this
-"0a219f2118b1e1357a7b01ba0e181d6c2d6bd800a8de57b7f192bdbfcbe3f058".
-
-Stream Cipher encryption:
-===================================================================
-Once you have your random key, click on the XOR calculator link.
-Choose "ASCII" In "I. Input:", type in the message of "Playing with
-Stream Cipher". Leave the other options as "hexadecimal". Copy and
-paste the random key into the "II. Input:". 
-
-If you have done all correctly, you should be able to get output
-similar to
-"a219f2118b1b1591b0268d469386a055903f853dcac32d69cb2fed6bb8b952a".
-==================================================================
-
-Stream Cipher decryption:
-==================================================================
-To reverse the process, copy the output back into the "I: Input"
-after choosing "hexadecimal" and choosing "III: Output" as "ASCII".
-You should get back the original message.
-==================================================================
+Let us use the above reference as an example. 
+0/1/2/3 has 2 bits,
+4/5/6/7 has 3 bits,
+8/9/10/11/12 has 4 bits.
+Bit(s) is essentially how many reserved space that are responsible for storing the
+different combination of 0 or 1. People can say 1 bit, it just mean there’s 1
+reserve space that can either store 0 or 1. When people say 2 bits, it means there’re
+2 reserve spaces that can either store all 0 or all 1 or a combination of 0 and 1.
