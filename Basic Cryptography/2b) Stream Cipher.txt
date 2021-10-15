@@ -24,6 +24,7 @@ different combination of 0 or 1. People can say 1 bit, it just mean there’s 1
 reserve space that can either store 0 or 1. When people say 2 bits, it means there’re
 2 reserve spaces that can either store all 0 or all 1 or a combination of 0 and 1.
 
+_____________________________________________________________________________________
 Stream Cipher
 When we buy a computer, it usually comes along with a keyboard. Before you switch the
 input language from English to other language, all the possible characters, letters
