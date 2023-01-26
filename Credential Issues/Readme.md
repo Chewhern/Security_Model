@@ -5,3 +5,6 @@ https://www.youtube.com/watch?v=28qwAaEs3FA&list=PLCCjQamH_8r3j-IBVH2gED_jZ_6ypW
 
 User credential issue has been separated into 2 parts. One is user credential issue and one is identity issue.
 
+https://www.youtube.com/watch?v=AwdusXjl858
+
+The document which states about identity issue can be found here in this folder/directory.
